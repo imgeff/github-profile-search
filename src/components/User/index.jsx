@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {NavLink} from 'react-router-dom';
 import './style.css';
+import {GithubLogo} from 'phosphor-react';
 
 export function User({user}) {
   return (
@@ -10,7 +11,10 @@ export function User({user}) {
       <img src={user.avatar_url} alt="Avatar do usuário" />
       <h2>{user.login}</h2>
       <nav>
-        <NavLink to={`/profile/${user.login}`}>Ver Perfil</NavLink>
+        <NavLink to={`/profile/${user.login}`}>
+          <GithubLogo size={28} color="#0d1117" weight="duotone" />
+          Ver Perfil
+        </NavLink>
       </nav>
     </div>
   );

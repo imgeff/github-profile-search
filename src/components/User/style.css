@@ -11,6 +11,7 @@
     border
     border-solid
     border-purple-200
+    overflow-hidden
     hover:bg-purple-200 ;
  }
  
@@ -74,14 +75,18 @@
  .card > nav {
 
   @apply hidden
-    mt-7
     transition-all
     duration-700 ;
  }
  
  .card > nav > a {
 
-  @apply font-semibold
+  @apply flex
+    flex-col
+    items-center
+    justify-center
+    gap-1
+    font-semibold
     text-marine-900
     hover:text-opacity-80
     transition-all ;
