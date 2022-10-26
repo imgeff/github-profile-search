@@ -5,7 +5,17 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        marine: {
+          900: '#0d1117',
+        },
+        purple: {
+          200: '#A67BF2',
+          500: '#4e3b7a',
+        },
+      },
+    },
   },
   plugins: [daisy],
   daisyui: {
