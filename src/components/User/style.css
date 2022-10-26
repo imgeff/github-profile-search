@@ -1,0 +1,95 @@
+/* From uiverse.io by @gagan-gv */
+.card {
+
+  @apply relative
+    w-48
+    h-64
+    bg-marine-900
+    rounded-xl
+    text-center
+    transition-all
+    border
+    border-solid
+    border-purple-200
+    hover:bg-purple-200 ;
+ }
+ 
+ .card .blob {
+
+  @apply h-2
+    w-3/4
+    rounded-b-3xl
+    my-0
+    mx-auto
+    bg-purple-200
+    transition-all ;
+ }
+ 
+ .card:hover .blob {
+
+  @apply h-0 ;
+ }
+ 
+ .card img {
+
+  @apply mt-8
+    mx-auto
+    mb-3
+    w-20
+    h-20
+    rounded-[50%]
+    transition-all
+    duration-500 ;
+ }
+ 
+ .card:hover img {
+
+  @apply w-full
+    h-[70%]
+    rounded-t-xl
+    rounded-b-none
+    mt-0
+    mx-auto
+    z-50 ;
+ }
+ 
+ .card h2 {
+
+  @apply py-4
+    px-3
+    text-2xl
+    transition-all
+    duration-100
+    -z-50
+    leading-4 ;
+ }
+ 
+ .card:hover h2 {
+
+  @apply hidden
+    transition-all
+    duration-500 ;
+ }
+ 
+ .card > nav {
+
+  @apply hidden
+    mt-7
+    transition-all
+    duration-700 ;
+ }
+ 
+ .card > nav > a {
+
+  @apply font-semibold
+    text-marine-900
+    hover:text-opacity-80
+    transition-all ;
+ }
+ 
+ .card:hover > nav {
+
+  @apply block
+    transition-all
+    duration-100 ;
+ }
