@@ -1,0 +1,32 @@
+.container-explore {
+  @apply flex
+    flex-col
+    justify-center
+    items-center
+    pt-40
+    min-h-screen ;
+}
+
+.user-list {
+  
+  @apply flex
+    flex-wrap
+    justify-center
+    items-center
+    gap-20
+    w-2/3 ;
+}
+
+.error-message {
+  @apply text-red-700
+    text-3xl
+    font-semibold
+}
+
+.container-explore h3 {
+  
+  @apply mt-40
+    mb-20
+    text-3xl
+    font-semibold ;
+}
