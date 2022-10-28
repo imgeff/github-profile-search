@@ -26,3 +26,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.load {
+
+  @apply w-full
+  min-h-screen
+  flex
+  flex-col
+  justify-center
+  items-center ;
+}

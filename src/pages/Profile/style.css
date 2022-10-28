@@ -1,0 +1,142 @@
+.profile {
+
+  @apply w-4/5
+    min-h-screen
+    max-w-3xl
+    mx-auto
+    flex
+    flex-col
+    justify-start
+    items-start
+    gap-10 ;
+}
+
+.profile figure {
+
+  @apply mt-14
+    mx-auto
+    flex
+    flex-col
+    justify-center
+    items-center
+    gap-3 ;
+}
+
+.profile figure img {
+
+  @apply aspect-square
+    w-80
+    rounded-full
+    border-2
+    border-solid
+    border-purple-500 ;
+}
+
+figure h1 {
+
+  @apply flex
+    flex-col
+    items-center
+    justify-center
+    gap-2
+    font-semibold
+    text-3xl ;
+}
+
+figure h1 svg {
+
+  @apply cursor-pointer
+    hover:border
+    hover:border-solid
+    hover:border-marine-700 ;
+}
+
+.infos-container {
+
+  @apply w-full
+    flex
+    justify-around
+    items-center ;
+}
+
+.infos {
+
+  @apply flex
+    flex-col
+    items-start
+    justify-center
+    gap-2 ;
+}
+
+.infos span {
+
+  @apply flex
+    items-center
+    justify-center
+    gap-5 ;
+}
+
+.infos-container nav {
+
+  @apply flex
+  flex-col
+  items-start
+  justify-center
+  gap-2;
+}
+
+.infos-container nav a {
+
+  @apply flex
+    justify-start
+    items-center
+    gap-5
+    underline
+    underline-offset-4
+    hover:text-purple-200 ;
+}
+
+.bio {
+
+  @apply mx-auto ;
+}
+
+.bio h2 {
+  
+  @apply font-semibold
+    text-xl
+    mb-2 ;
+}
+
+.bio p {
+
+  @apply py-5
+    px-10
+    min-w-[37.375rem]
+    bg-marine-600
+    text-center
+    rounded-xl
+    border
+    border-solid
+    border-purple-500 ;
+}
+
+.profile .link-repo {
+
+  @apply mx-auto
+    min-w-[24rem]
+    bg-marine-600
+    py-5
+    px-10
+    flex
+    justify-center
+    items-center
+    gap-5
+    rounded-xl
+    border
+    border-solid
+    border-purple-500
+    hover:border-purple-200
+    hover:text-purple-200
+    transition-all  ;
+}
