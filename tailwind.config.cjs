@@ -9,6 +9,8 @@ module.exports = {
       colors: {
         marine: {
           900: '#0d1117',
+          700: '#15181E',
+          600: '#171c26',
         },
         purple: {
           200: '#A67BF2',
