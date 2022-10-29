@@ -1,0 +1,27 @@
+.repos-container {
+
+  @apply flex
+    flex-col
+    justify-center
+    items-center
+    min-h-screen
+    py-10 ;
+}
+
+.repos-container h1 {
+
+  @apply text-3xl
+  font-semibold ;
+}
+
+.repos {
+
+  @apply mx-auto
+  w-4/5
+  py-20
+  flex
+  flex-wrap
+  gap-10
+  justify-center
+  items-center ; 
+}
