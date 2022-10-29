@@ -1,0 +1,78 @@
+.repo {
+
+  @apply py-5
+    px-10
+    w-96
+    min-h-[7.125rem]
+    flex
+    flex-col
+    gap-4
+    border
+    border-solid
+    border-purple-500
+    hover:border-purple-200
+    rounded-md
+    transition-all ;
+}
+
+.repo:hover {
+  -webkit-box-shadow: 0 3px 15px 0px #4e3b7a;
+  -moz-box-shadow: 0 3px 15px 0px #4e3b7a;
+  box-shadow: 0 3px 15px 0px #4e3b7a;
+}
+
+.repo .repo-header {
+  
+  @apply flex
+    items-start
+    justify-between ;
+}
+
+.repo h2 {
+
+  @apply font-semibold
+    text-lg ;
+}
+
+/* .repo p {
+
+  @apply hidden ;
+} */
+
+.repo label {
+
+  @apply w-full 
+    py-2
+    rounded-md
+    font-medium
+    bg-marine-600
+    border
+    border-solid
+    border-purple-500
+    text-purple-200
+    text-center
+    hover:border-purple-200
+    cursor-pointer
+    transition-all ;
+}
+
+.repo-header > span {
+  
+  @apply text-purple-200
+  font-medium
+  text-sm ;
+}
+
+.repo-header div {
+  @apply flex
+    items-center
+    justify-center
+    gap-3 ;
+}
+
+.repo-header div span {
+  @apply flex
+    flex-col
+    items-center
+    justify-center ;
+}
