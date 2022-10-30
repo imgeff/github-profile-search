@@ -7,7 +7,7 @@ import './style.css';
 
 export function Repos() {
   const {user} = useParams();
-  const [repos, setRepos] = useState([]);
+  const [repos, setRepos] = useState();
   const colorPurple = '#A67BF2';
 
   async function getRepos() {
