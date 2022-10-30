@@ -1,0 +1,9 @@
+.container-favorites {
+
+  @apply pt-0
+}
+
+.container-favorites h3 {
+
+  @apply mt-5 ;
+}
