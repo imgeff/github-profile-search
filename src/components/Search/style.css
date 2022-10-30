@@ -15,8 +15,11 @@
   px-4
   w-4/5
   rounded-lg
-  bg-purple-500
-  text-white ;
+  bg-marine-600
+  text-white
+  border
+  border-solid
+  border-purple-500 ;
 }
 
 .search-form button  {
@@ -25,7 +28,7 @@
   px-4
   w-1/5
   rounded-lg
-  bg-[#04d361]
+  bg-purple-200
   text-marine-900
   font-semibold
   cursor-pointer

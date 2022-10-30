@@ -25,7 +25,7 @@
 
 .container-explore h3 {
   
-  @apply mt-40
+  @apply mt-20
     mb-20
     text-3xl
     font-semibold ;
