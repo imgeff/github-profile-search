@@ -34,11 +34,6 @@
     text-lg ;
 }
 
-/* .repo p {
-
-  @apply hidden ;
-} */
-
 .repo label {
 
   @apply w-full 

@@ -1,100 +1,61 @@
-/* From uiverse.io by @gagan-gv */
 .card {
 
-  @apply relative
-    w-48
-    h-64
-    bg-marine-900
-    rounded-xl
-    text-center
-    transition-all
+  @apply w-max
+    flex
     border
     border-solid
-    border-purple-200
-    overflow-hidden
-    hover:bg-purple-200 ;
- }
- 
- .card .blob {
-
-  @apply h-2
-    w-3/4
-    rounded-b-3xl
-    my-0
-    mx-auto
-    bg-purple-200
-    transition-all ;
- }
- 
- .card:hover .blob {
-
-  @apply h-0 ;
+    border-purple-500
+    rounded-xl ;
  }
  
  .card img {
 
-  @apply mt-8
-    mx-auto
-    mb-3
-    w-20
-    h-20
-    rounded-[50%]
-    transition-all
-    duration-500 ;
+  @apply w-48
+    h-48;
  }
- 
- .card:hover img {
 
-  @apply w-full
-    h-[70%]
-    rounded-t-xl
-    rounded-b-none
-    mt-0
-    mx-auto
-    z-50 ;
- }
- 
- .card h2 {
+ .card > div {
 
-  @apply py-4
-    px-3
-    text-2xl
-    transition-all
-    duration-100
-    -z-50
-    leading-4 ;
- }
- 
- .card:hover h2 {
-
-  @apply hidden
-    transition-all
-    duration-500 ;
- }
- 
- .card > nav {
-
-  @apply hidden
-    transition-all
-    duration-700 ;
- }
- 
- .card > nav > a {
-
-  @apply flex
+  @apply w-40
+    flex
     flex-col
-    items-center
     justify-center
-    gap-1
-    font-semibold
-    text-marine-900
-    hover:text-opacity-80
-    transition-all ;
- }
- 
- .card:hover > nav {
+    items-center
+    gap-4
+    bg-marine-600 ;
 
-  @apply block
-    transition-all
-    duration-100 ;
+ }
+
+ .card > div h2 {
+
+  @apply font-semibold
+  text-xl
+  text-purple-200 ;
+
+ }
+
+ .card > div nav {
+
+  @apply w-max
+    h-max
+    flex
+    justify-center
+    items-center ;
+
+ }
+
+ .card > div a {
+
+  @apply font-medium
+    py-1
+    px-4
+    border
+    border-solid
+    border-gray-300
+    rounded-xl
+    hover:border-purple-200
+    hover:text-purple-200
+    hover:scale-90
+    transition-all ;
+
  }
