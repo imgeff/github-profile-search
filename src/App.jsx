@@ -11,8 +11,7 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route path="/">
-          <Route path="explore" element={<Explore />} />
+        <Route path="/" element={<Explore />}>
           <Route path="favorites" element={<Favorites />} />
           <Route path="profile/:user" element={<Profile />} />
           <Route path="profile/:user/repos" element={<Repos />} />
