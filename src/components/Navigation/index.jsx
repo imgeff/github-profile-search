@@ -7,11 +7,11 @@ export function Navigation() {
   const colorPurple = '#A67BF2';
   return (
     <nav className="navigation">
-      <NavLink to="/explore">
+      <NavLink to="/explore" data-testid="link-explore">
         <Compass size={40} color={colorPurple} weight="duotone" />
         <span>Explorar</span>
       </NavLink>
-      <NavLink to="/favorites">
+      <NavLink to="/favorites" data-testid="link-favorites">
         <Bookmark size={40} color={colorPurple} weight="duotone" />
         <span>Favoritos</span>
       </NavLink>
