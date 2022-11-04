@@ -18,6 +18,7 @@ export function Search({placeholder, setValue, endpoint, extraAtributes}) {
   return (
     <div className="search-form">
       <input
+        data-testid="search-input"
         type="text"
         placeholder={placeholder}
         value={inputValue}
@@ -25,6 +26,7 @@ export function Search({placeholder, setValue, endpoint, extraAtributes}) {
         {...extraAtributes}
       />
       <button
+        data-testid="search-button"
         type="button"
         onClick={submitSearch}
         disabled={ inputValue.length === 0 }
