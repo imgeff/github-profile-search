@@ -10,25 +10,26 @@ export function Repo({repo}) {
   return (
     <div className="repo">
       <header className="repo-header">
-        <span>{repo.language}</span>
+        <span data-testid="repo-language">{repo.language}</span>
         <div>
-          <span title="Stargazers">
+          <span title="Stargazers" data-testid="repo-stars">
             <Star size={16} color={colorPurple} weight="duotone" />
             {repo.stargazers_count}
           </span>
-          <span title="Watchers">
+          <span title="Watchers" data-testid="repo-watchers">
             <Eye size={16} color={colorPurple} weight="duotone" />
             {repo.watchers_count}
           </span>
-          <span title="Forks">
+          <span title="Forks" data-testid="repo-forks">
             <GitFork size={16} color={colorPurple} weight="duotone" />
             {repo.forks_count}
           </span>
         </div>
       </header>
-      <h2>{repo.name}</h2>
+      <h2 data-testid="repo-name">{repo.name}</h2>
       <label
         htmlFor={`modal-repo-${repo.name}`}
+        data-testid="repo-label"
       >
         Ver mais
       </label>

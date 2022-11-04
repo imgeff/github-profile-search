@@ -4,14 +4,17 @@ import {NavLink} from 'react-router-dom';
 import './style.css';
 
 export function User({user}) {
-  console.log(user);
   return (
-    <div className="card">
-      <img src={user.avatar_url} alt="Avatar do usuário" />
+    <div className="card" data-testid="card-profile">
+      <img
+        data-testid="img-profile"
+        src={user.avatar_url}
+        alt="Avatar do usuário"
+      />
       <div>
-        <h2>{user.login}</h2>
+        <h2 data-testid="name-profile">{user.login}</h2>
         <nav>
-          <NavLink to={`/profile/${user.login}`}>
+          <NavLink to={`/profile/${user.login}`} data-testid="link-profile">
             Ver Perfil
           </NavLink>
         </nav>

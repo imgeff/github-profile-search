@@ -19,8 +19,11 @@ export function ModalRepo({repo}) {
       >
         <label className="daisy-modal-box relative" htmlFor="">
           <div className="modal-extra-infos">
-            {repo.license && <span>{repo.license.name }</span> }
-            <div className="modal-info-dates">
+            {repo.license && (
+              <span data-testid="modal-repo-license">
+                {repo.license.name }
+              </span> )}
+            <div className="modal-info-dates" data-testid="modal-repo-dates">
               <span>
                 {`Criado em: `}
                 <span>{createdAt}</span>
@@ -30,15 +33,24 @@ export function ModalRepo({repo}) {
                 <span>{updatedAt}</span>
               </span>
             </div>
-            <ul>
+            <ul data-testid="modal-repo-topics">
               {repo.topics.map((topic) => <li key={topic}>{topic}</li>)}
             </ul>
           </div>
-          <h3 className="text-lg font-bold">{repo.name}</h3>
-          <p className="py-4">
+          <h3
+            className="text-lg font-bold"
+            data-testid="modal-repo-name"
+          >
+            {repo.name}
+          </h3>
+          <p
+            className="py-4"
+            data-testid="modal-repo-description"
+          >
             {repo.description ? repo.description : 'Sem descrição'}
           </p>
           <a
+            data-testid="modal-repo-link"
             href={repo.html_url}
             rel='noreferrer'
             target="_blank"
