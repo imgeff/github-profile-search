@@ -29,9 +29,9 @@ Este  projeto foi feito utilizando a APi do github para explorar e buscar perfis
 
 > Linguagens: `HTML/CSS` `Javascript`
 
-> Frameworks: `Tailwind CSS`
+> Frameworks: `Tailwind CSS`, `Vitest`
 
-> Bibliotecas: `React`, `Phosphor React`
+> Bibliotecas: `React`, `Phosphor React`, `React Testing Library`
 
 > Plugins: `Daisyui`
 
@@ -53,5 +53,17 @@ Para rodar a aplicação:
  - Abra um terminal na raiz do projeto
  - Execute o comando `npm run dev`
  - Abra o navegador no endereço -> http://localhost:5173/
+
+ ## Testes do projeto:
+
+Para rodar os testes sem informações de cobertura:
+
+ - Abra um terminal na raiz do projeto
+ - Execute o comando `npm test`
+
+Para rodar os testes com informações de cobertura:
+
+ - Abra um terminal na raiz do projeto
+ - Execute o comando `npm run test:coverage`
 
 
