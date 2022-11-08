@@ -3,6 +3,10 @@ import {InfinitySpin} from 'react-loader-spinner';
 import {Search} from '../../components/Search';
 import {User} from '../../components/User';
 import {getUsers} from '../../requests';
+import {
+  getItemLocalStorage,
+  setItemLocalStorage,
+} from '../../helpers/LocalStorage';
 import './style.css';
 
 export function Explore() {
@@ -15,8 +19,16 @@ export function Explore() {
     setUsers(response);
   }
 
+  function startLocalStorage() {
+    const favoriteUsersLocalStorage = getItemLocalStorage('favoriteUsers');
+    if (favoriteUsersLocalStorage === null) {
+      setItemLocalStorage('favoriteUsers', []);
+    }
+  }
+
   useEffect(() => {
     getAllUsers();
+    startLocalStorage();
   }, []);
 
   useEffect(() => {
