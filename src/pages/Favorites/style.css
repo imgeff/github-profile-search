@@ -7,3 +7,20 @@
 
   @apply mt-5 ;
 }
+
+.container-favorites h1 {
+  -webkit-text-stroke: 0.5px #A67BF2;
+
+  @apply text-3xl
+    font-semibold
+    text-purple-500 ;
+}
+
+.container-favorites svg {
+
+  @apply mb-5
+    hover:scale-95
+    hover:opacity-90
+    cursor-pointer
+    transition-all ;
+}
