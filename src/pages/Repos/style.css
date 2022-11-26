@@ -5,13 +5,17 @@
     justify-center
     items-center
     min-h-screen
-    py-10 ;
+    py-10
+    ml-24
+    md:ml-16 ;
 }
 
 .repos-container h1 {
 
   @apply text-3xl
-  font-semibold ;
+  font-semibold
+  md:text-center
+  md:text-xl ;
 }
 
 .repos {
