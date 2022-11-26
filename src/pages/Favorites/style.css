@@ -1,6 +1,8 @@
 .container-favorites {
 
   @apply pt-0
+    px-2
+    text-center ;
 }
 
 .container-favorites h3 {
