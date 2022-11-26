@@ -5,6 +5,17 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    screens: {
+      '2xl': {'max': '1535px'},
+
+      'xl': {'max': '1279px'},
+
+      'lg': {'max': '860px'},
+
+      'md': {'max': '639px'},
+
+      'sm': {'max': '400px'},
+    },
     extend: {
       colors: {
         gray: {
