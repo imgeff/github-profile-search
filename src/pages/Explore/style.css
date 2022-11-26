@@ -4,7 +4,8 @@
     justify-center
     items-center
     pt-40
-    min-h-screen ;
+    min-h-screen
+    ml-24 ;
 }
 
 .user-list {
