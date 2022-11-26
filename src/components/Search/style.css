@@ -6,7 +6,8 @@
     justify-center
     items-center
     gap-3
-    p-1 ;
+    p-1
+    md:w-full ;
 }
 
 .search-form input  {
@@ -19,7 +20,9 @@
   text-white
   border
   border-solid
-  border-purple-500 ;
+  border-purple-500
+  md:text-xs
+  md:w-[60%] ;
 }
 
 .search-form button  {
@@ -37,5 +40,7 @@
   disabled:cursor-not-allowed
   disabled:hover:opacity-40
   disabled:opacity-40
-  lg:w-1/3 ;
+  lg:w-1/3
+  md:text-xs
+  md:w-[30%] ;
 }

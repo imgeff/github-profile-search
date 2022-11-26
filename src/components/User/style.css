@@ -10,10 +10,11 @@
  
  .card img {
 
-  @apply w-48
-    h-48
+  @apply aspect-square
+    w-48
     rounded-tl-xl
-    rounded-bl-xl;
+    rounded-bl-xl
+    md:w-36;
  }
 
  .card > div {
@@ -26,15 +27,17 @@
     gap-4
     rounded-tr-xl
     rounded-br-xl
-    bg-marine-600 ;
+    bg-marine-600
+    md:w-32 ;
 
  }
 
  .card > div h2 {
 
   @apply font-semibold
-  text-xl
-  text-purple-200 ;
+    text-xl
+    text-purple-200
+    md:text-base ;
 
  }
 
@@ -60,6 +63,7 @@
     hover:border-purple-200
     hover:text-purple-200
     hover:scale-90
-    transition-all ;
+    transition-all
+    md:text-xs ;
 
  }
