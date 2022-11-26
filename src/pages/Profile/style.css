@@ -8,7 +8,11 @@
     flex-col
     justify-start
     items-start
-    gap-10 ;
+    gap-10
+    lg:ml-24
+    lg:w-auto
+    lg:items-center
+    lg:px-5 ;
 }
 
 .profile figure {
@@ -56,7 +60,8 @@ figure h1 svg {
   @apply w-full
     flex
     justify-around
-    items-center ;
+    items-center
+    lg:max-w-[100vw] ;
 }
 
 .infos {
