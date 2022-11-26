@@ -15,7 +15,9 @@
     pt-5
     pb-10
     rounded-xl
-    border-purple-500 !important;
+    border-purple-500
+    md:min-w-[95%]
+    md:w-[95%] !important;
 }
 
 .daisy-modal-box h3 {
