@@ -4,7 +4,10 @@
     justify-center
     items-center
     pt-40
-    min-h-screen ;
+    min-h-screen
+    ml-24
+    md:ml-16
+    md:pt-20 ;
 }
 
 .user-list {
@@ -14,7 +17,8 @@
     justify-center
     items-center
     gap-20
-    w-2/3 ;
+    w-2/3
+    md:w-11/12 ;
 }
 
 .error-message {
@@ -25,8 +29,9 @@
 
 .container-explore h3 {
   
-  @apply mt-20
-    mb-20
+  @apply my-20
     text-3xl
-    font-semibold ;
+    font-semibold
+    md:text-xl
+    md:my-10 ;
 }

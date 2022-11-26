@@ -15,7 +15,8 @@
     border-r
     border-solid
     border-purple-500
-    z-50 ;
+    z-50
+    md:w-16 ;
 }
 
 .navigation a {
@@ -34,11 +35,14 @@
   @apply aspect-square
     min-w-[40px]
     transition-all
-    hover:scale-90 ;
+    hover:scale-90
+    md:min-w-[8px]
+    md:w-8 ;
 }
 
 
 .navigation a span {
 
-  @apply font-semibold ;
+  @apply font-semibold
+  md:text-xs ;
 }
