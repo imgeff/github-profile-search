@@ -23,7 +23,7 @@
 <br />
 
 # Sobre o Projeto
-Este  projeto foi feito utilizando a APi do github para explorar e buscar perfis, visualizar informações de perfil, exibir repositórios de um perfil e informações sobre esses repositórios.
+Este  projeto foi feito utilizando a API do github para explorar e buscar perfis, visualizar informações de perfil, exibir repositórios de um perfil e informações sobre esses repositórios.
 
 ## Ferramentas utilizadas
 
